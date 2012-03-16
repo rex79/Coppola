@@ -27,7 +27,8 @@ class Coppola < Thor
   desc "create_admin_area", "Create admin area with a custom design"
   def create_admin_area
     run 'padrino g app Admin'
-    #run 'padrino g controller '
+    
+    get 'https://github.com/padrino/sample_blog/raw/master/public/stylesheets/reset.css', 'admin/views/layouts/application.erb'
   end
 
 

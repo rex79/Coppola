@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title><%= ENV['site_name'] %> --- <%= ENV['admin_area'] %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+
+    <link href="/admin/stylesheets/bootstrap/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/admin/stylesheets/base.css">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .main-list li {
+        border-bottom:dotted 1px #ccc;
+        margin-top:5px;
+      }
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/admin/ico/favicon.ico">
+
+    <!--
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    -->
+
+    <script src="/javascripts/jquery.js"></script>
+  </head>
+
+	<body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/admin/home"><%= ENV['site_name'] %> Admin Area</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="#">Gestione utenti</a></li>
+            </ul>
+            <p class="navbar-text pull-right">Logged in as <a href="#">username <i class="icon-off icon-white"></i></a></p>
+          </div><!--/.nav-collapse -->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+
+              <li class="nav-header">Elenco prodotti</li>
+              <li class="active">
+                <a href="#">Gestione categorie</a>
+              </li>
+              <li>
+                <a href="/admin/home/new">Nuovo prodotto</a>
+              </li>
+              <li class="nav-header">Elenco News</li>
+              <li>
+                <a href="#">Nuova news</a>
+              </li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+
+        <div class="span9" style="min-height:500px;">
+          <%= yield %>
+        </div>
+
+      <hr>
+
+    </div><!--/.fluid-container-->
+
+    <footer>
+      <p>&copy; <a href="http://www.informaticamente.org">Informaticamente</a> <%= Time.now.year %></p>
+    </footer>
+
+    <!-- Le javascript
+    ================================================== -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/admin/javascripts/bootstrap/bootstrap.js"></script>
+
+  </body>
+</html>
