@@ -1,0 +1,127 @@
+input {
+	border:solid 1px #CCC;
+    width: 80%;
+}
+textarea {
+    width:80%
+}
+fieldset {
+	color:#666;
+    border:solid 1px #CCC;
+    padding:10px 0px 10px 5px;
+    margin:0px 0px 10px 0px;
+}
+legend {
+    font-weight:bold;
+    margin:10px 0px 0px 0px;
+}
+dt {
+    padding:10px 0px 0px 0px;
+}
+
+.container-form {
+    width:100%;
+    float:left;
+}
+
+.form-title {
+    float:left;
+    font-size:18px;
+    color:#444;
+    font-weight:bold;
+    margin-bottom:10px;
+    padding-bottom:5px;
+}
+
+.box-input-form-left {
+	float:left;
+	width:50%;
+}
+.box-input-form-right {
+	float:right;
+	width:50%;
+}
+.box-input-form-full {
+	width:100%;
+}
+
+.form-elements-spacer{ width:100%; margin:10px; clear:both }
+
+.form-button {
+    width:100%;
+    float:right;
+    text-align:right;
+    margin-top:20px;
+}
+.submit-form {
+    width: 100px;
+    height:40px;
+    font-size:14px;
+    text-transform: uppercase;
+    border:solid 1px #AA1111;
+    margin:0px 10px 0px 0px;
+    float:left;
+}
+.checkbox {
+    width: 19px;
+    height: 25px;
+    padding: 0 5px 0 0;
+    clear: left;
+    line-height:25px;
+}
+.select {
+    width:300px;
+    clear:left;
+    padding: 0 5px 0 0;
+}
+.checkbox-mini {
+    width: 19px;
+    height: 25px;
+    padding: 0 5px 0 0;
+    line-height:25px;
+}
+.submit-input-link {
+    width: 100px;
+    height:40px;
+    font-size:14px;
+    line-height:40px;
+    text-align:center;
+    text-transform: uppercase;
+    border:solid 1px #AA1111;
+    margin:0px 10px 0px 0px;
+    float:left;   
+    background:#ccc;
+}
+.file-text-div {
+    width:80%;
+    float:left;
+    margin:0px 20px 20px 0px;
+}
+.file-image-div {
+    width:100px;
+    float:left;
+}
+.file-delete-div {
+    width:50px;
+    float:left;
+}
+.file-textarea {
+    float:left;
+    width:100%;
+    height:50px;
+}
+.file-list {
+    list-style:none;
+}
+
+
+/******************************* NEW ADMIN AREA WITH RUBY */
+.description {
+    font-size:12px;
+    color:#aaa;
+    font-style:italic;
+}
+label {
+    color:#666;
+    font-size:14px;
+}

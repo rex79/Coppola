@@ -1,0 +1,136 @@
+.page_container {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 904px;
+	top: -32px;
+	min-height:90%;
+	height:auto !important;
+	height:90%;
+}
+
+.toppanel {
+	width: 900px;
+	left: 0px;
+	z-index: 25;
+	text-align: center;
+}
+.panel {
+	width: 900px;
+	height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 10;
+	overflow: hidden;
+	text-align: left;
+}
+.panel_contents {
+	background: #FFF;
+	filter:alpha(opacity=70);
+	-moz-opacity:0.70;
+	-khtml-opacity: 0.70;
+	opacity: 0.70;
+	height: 100%;
+	width: 900px;
+}
+.panel h1 {
+	text-align: center;
+	color: white;
+	font-weight: normal;
+	line-height: 35px;
+	left: 275px;
+	position: absolute;
+	top: 10px;
+}
+.panel h2 {
+	text-align: center;
+	color: #447c6f;
+	line-height: 25px;
+	font-size: 16px;
+	position: absolute;
+	top: 60px;
+	left: 350px;
+}
+.content {
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	position: relative;
+	top: 90px;
+	text-align: left;
+	color: #0000;
+	font-size: 12px;
+	padding-bottom: 30px;
+}
+.border {
+	border: 10px #AA1111 solid;
+	padding:20px 0px 0px 0px;
+}
+img.border {
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 8px;
+}
+img.border_pic {
+	border: 15px #AA1111 solid;
+	position: absolute;
+	top: 110px;
+	float: left;
+	margin-left: 150px;
+	width: 250px;
+	height: 150px;
+	z-index: 30;
+}
+.login-header {
+	width:100px;
+	background:#AA1111;
+	position:absolute;
+	right:324px;
+	top:70px;
+	color:#FFF;
+	height:40px;
+	text-align:right;
+	font-size:22px;
+	line-height:40px;
+	padding-right:12px;
+	border:solid 1px;
+}
+.login {
+	width: 250px;
+	height: 150px;
+	position: absolute;
+	right: 325px;
+	top: 110px;
+	background: #EBEBEB;
+	text-align: left;
+	padding-left: 10px;
+}
+.login p {
+	color: #000;
+	line-height: 25px;
+}
+.login input#password {
+	position: relative;
+	right: -3px;
+}
+.login_btn {
+	border: 1px #899690 solid;
+	cursor: pointer;
+	font-size:14px;
+	color: #000;
+	width:200px;
+	height:30px;
+	margin:0px 0px 0px 5px;
+}
+
+
+.forgot-pwd {
+	color:#F00;
+	font-size:18px;
+	width:100%;
+	text-align:center;
+	float:left;
+	position:absolute;
+	top:260px;
+	height:30px;
+}

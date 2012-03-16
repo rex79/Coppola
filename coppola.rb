@@ -24,6 +24,13 @@ class Coppola < Thor
     gsub_file "#{project_name}/config/database.rb", "''", "'#{db_password}'"
   end
 
+  desc "create_admin_area", "Create admin area with a custom design"
+  def create_admin_area
+    run 'padrino g app Admin'
+    #run 'padrino g controller '
+  end
+
+
 end
 
 

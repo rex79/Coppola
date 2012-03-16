@@ -1,0 +1,273 @@
+/*****************************
+
+Colori base css:
+
+#FFF			=> Rosso
+#AA1111			=> Verde scuro
+#EBEBEB			=> Grigio scuro
+#000			=> grigio
+
+
+font di base
+font-family: 'Arimo', sans-serif;
+font-family: 'PT Sans', sans-serif;
+
+*****************************/
+html{
+	font-size: 100%;
+} 
+
+body {
+	background: #FFF;
+	color:#000;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'PT Sans', sans-serif;
+	font-size:1em;
+}
+
+a { text-decoration:none; color:#000; cursor:pointer;}
+a:hover { color: #AA1111; }
+
+.clear {clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+.clearfix:before,.clearfix:after{content:'\0020';display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+.clearfix:after{clear:both}
+.clearfix{zoom:1}
+
+@font-face {
+	font-family: icons;
+	src: url('/admin/stylesheets/fonts/fico.eot');
+	src: url('/admin/stylesheets/fonts/fico.eot?#iefix') format('embedded-opentype'),
+		url('/admin/stylesheets/fonts/fico.ttf') format('truetype'),
+		url('/admin/stylesheets/fonts/fico.svg#Fico') format('svg');
+}
+.icon,
+.icon_generated:before {
+	font-family: icons;
+	font-weight: normal !important;
+	font-style: normal !important;
+	text-transform: none !important;
+	padding-right: 3px;
+}
+
+.icon_generated {
+	color: red;
+}
+	.icon_generated:before {
+		content: attr(data-icon);
+		padding-right: 7px;
+	}
+
+/********************************************************* HEADER PAGINA */
+.header {
+	position:relative;
+	margin-left: 0 auto 0 auto;
+	width: 100%;
+	height: 135px;
+	background: #EBEBEB;
+	border-bottom: 1px solid #EBEBEB;
+	text-align:center;
+	border-bottom:solid 10px #AA1111;
+}
+.header h1 {
+	font-weight: bold;
+	padding-top: 20px;
+	font-size: 40px;
+	color: white;
+}
+.header h2 {
+	font-weight: bold;
+	font-size: 16px;
+	color: #7e7e7e;
+}
+.lingue-div {
+	margin-left: 0 auto 0 auto;
+	width: 100%;
+	height: 20px;
+	background: #EBEBEB;
+	border-bottom: 1px solid #EBEBEB;
+	text-align:right;
+	border-bottom:solid 3px #AA1111;
+	padding-top:10px;
+	font-size:10px;
+	line-height:20px;
+}
+	.lingue-div img {
+		vertical-align: middle;
+	}
+
+/********************************************************* CONTENITORE PAGINA */
+.wrapper { float:right; width:100%; margin:0px 0px 20px -200px; }
+.wrapper-vuoto { width:100%; }
+.main-content{ margin-left:200px; }
+.left-column { float:left;width:198px; background:#EBEBEB;border:solid 1px #AA1111; margin:0px 0px 20px 0px; }
+
+.inner-menu-content { padding: 10px; margin-bottom:10px;}
+.inner-center-content { padding: 10px; margin-bottom:10px; width:auto;}
+
+.footer {
+	width:100%;
+	height:30px;	
+	clear:both;
+	background:#EBEBEB;
+	margin:30px 10px 0 0;
+	text-align:right;
+	line-height:30px;
+}
+.footer p {
+	font-size: 13px;
+	color: #AA1111;
+	padding-right:10px;
+}
+
+/********************************************************* MENU DI NAVIGAZIONE */
+.navigation {
+	list-style:none;
+	font-size:12px;
+}
+.navigation li {
+	margin:10px 0px 5px 0px;
+	padding:0px 0px 5px 0px;
+	width:120px;
+}
+.navigation li.active { 
+	margin:10px 0px 5px 0px;
+	padding:0px 0px 5px 0px;
+	font-weight:bold;
+	width:120px;
+}
+	.navigation li.active a {
+		color: #AA1111;
+	}
+
+    .navigation ul {
+        list-style:none;
+        margin-left:40px
+    }
+
+    .anagrafica-menu {
+        padding: 0px 0px 0px 20px;
+    }
+    .prodotti-menu {
+        padding:0px 0px 0px 5px;
+    }
+    
+	.icon-g:before {
+		font-family:icons;
+		content: "g";
+		margin-right:5px;
+		color:#AA1111;
+	}
+	.icon-home:before {
+		font-family:icons;
+		content: "⌂";
+		margin-right:5px;
+		color:#AA1111;
+	}
+	.icon-r:before {
+		font-family:icons;
+		content: "r";
+		margin-right:5px;
+		color:#AA1111;
+	}
+	.icon-B:before {
+		font-family:icons;
+		content: "B";
+		margin-right:5px;
+		color:#AA1111;
+	}
+	.icon-p:before {
+		font-family:icons;
+		content: "p";
+		margin-right:5px;
+		color:#AA1111;
+	}
+
+    .home-menu {
+        padding:0px 0px 0px 10px;
+    }
+
+/********************************************************* STILE VISTA A LISTA DEGLI ELEMENTI */
+.main-list-table {
+	width:100%;
+	border:solid 1px #CCC;
+}
+	.main-list-table thead {
+		background:#EBEBEB;
+		height:20px;
+		font-size:18px;
+		color:#000;
+		text-transform:uppercase;
+	}
+	.main-list-table th {
+		padding:10px 0px 10px 0px;
+	}
+	.main-list-table td {
+        font-size:12px;
+        line-height: 24px;
+		padding: 5px 0px 5px 5px;
+	}
+	.main-list-table td.center {
+		text-align:center;
+	}
+	.main-list-table td.odd {
+		background: #EBEBEB;
+	}
+
+.main-list-inner-table {
+	width:80%;
+}
+
+.top-header-right {
+	float:right;
+	font-size:16px;
+  line-height:24px;
+  width:50%;
+	text-align:right;
+	margin:0px 0px 20px 0px;
+  padding:0px 00px 0px 0px;
+  border-bottom:solid 1px #ccc;
+}
+.top-header-left {
+	float:left;
+	width:50%;
+	font-size:16px;
+  line-height:24px;
+	text-align:left;
+	margin:0px 0px 20px 0px;
+  padding:0px 00px 0px 0px;
+  border-bottom:solid 1px #ccc;
+}
+/********************************************************* BOX PER HOME PAGE */
+.box-home {
+    float:left;
+    width:49%;
+    padding:20;
+    border:solid 1px #CCC;
+    text-align:center;
+    margin:0px 0px 20px 0px;
+    font-size:32px;
+    color:#999;
+}
+.box-home a {
+    color:#999;
+}
+    .left {
+        float:left;
+    }
+
+    .right {
+        float:right;
+    }
+.home-box-icon {
+	font-size:2em;
+	color:#AA1111;
+	margin:20px 0px 20px 0px;
+}
+.delete {
+    color:#F00;
+}
+.ico-table {
+    font-size:18px;
+}
